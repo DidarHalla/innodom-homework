@@ -1,0 +1,26 @@
+.rocket1{
+    transform: rotate(45deg);
+    color: rgb(156, 203, 244);
+}
+.rocket2{
+    transform: rotate(45deg);
+    color: rgb(221, 244, 156);
+}
+.rocket3{
+    transform: rotate(45deg);
+    color: rgb(156, 244, 185);
+}
+.rocket4{
+    transform: rotate(45deg);
+    color: rgb(244, 156, 156);
+}
+
+.wrapper-header-items{
+    display: flex;
+    background-color: bisque;
+    width: 75%;
+}
+
+.header-text{
+    margin-right: 73%;
+}

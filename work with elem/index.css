@@ -1,0 +1,16 @@
+.wrapper-icon:nth-child(1){
+    filter: drop-shadow(3px 1px 0.5px #dd7a44);
+}
+
+.wrapper-icon{
+    display: flex;
+}
+
+.css{
+    background-color: blue;
+    width: 100%;    
+}
+
+.js{
+    text-decoration: line-through rgb(245, 216, 171);
+}
