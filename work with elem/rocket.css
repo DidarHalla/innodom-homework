@@ -18,9 +18,6 @@
 .wrapper-header-items{
     display: flex;
     background-color: bisque;
-    width: 75%;
+    justify-content:space-between;
 }
 
-.header-text{
-    margin-right: 73%;
-}
