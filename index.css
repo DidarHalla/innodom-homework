@@ -12,5 +12,19 @@
 }
 
 .right{
+    /* background-color: antiquewhite;
+    position: relative;
+    top: 150px;
+    shape-outside: ellipse(193px 405px at 50% 48%);
+    width: 100px;
+    height: 100px; */
     float: right;
+}
+
+.smile{
+    position: relative;
+    shape-outside: ellipse(93px 45px at 10% 48%);
+    width: 100px;
+    height: 100px;
+    float: left;
 }
