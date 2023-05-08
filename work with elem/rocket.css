@@ -1,18 +1,22 @@
 .rocket1{
     transform: rotate(45deg);
     color: rgb(156, 203, 244);
+    font-size: 20px! important;
 }
 .rocket2{
     transform: rotate(45deg);
     color: rgb(221, 244, 156);
+    font-size: 25px !important;
 }
 .rocket3{
     transform: rotate(45deg);
     color: rgb(156, 244, 185);
+    font-size: 30px !important;
 }
 .rocket4{
     transform: rotate(45deg);
     color: rgb(244, 156, 156);
+    font-size: 35px !important;
 }
 
 .wrapper-header-items{
