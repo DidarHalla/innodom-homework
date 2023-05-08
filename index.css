@@ -1,47 +1,16 @@
-.text{
-    color: blue;
-    background-color: rgba(64, 99, 215, 0.427);
-    border-radius: 10%;
-    padding: 2px 5px;
-}
-.wrapperH2 h2 {
-    width: max-content; 
-    border-radius: 10px;
-    padding: 2px 5px;
-    font-size: larger;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.452);
-}
-div > p{
-    background-color: blueviolet;
-    width: max-content;
-    border-radius: 10px;
-    padding: 2px 5px;
-}
-p + span{
-    background-color: rgb(226, 211, 43);
-    width: max-content;
-    border-radius: 10px;
-    padding: 2px 5px;
+.wrapper-items{
+    height: 300px;
+    overflow: scroll;
 }
 
-div p span{
-    background-color: rgb(131, 226, 43);
-    width: max-content;
-    border-radius: 10px;
-    padding: 2px 5px;
+.material-symbols-outlined{
+    font-size: 100px !important;
 }
 
-#front > .innodom{
-    background-color: rgb(246, 144, 56);
-    width: max-content;
-    border-radius: 10px;
-    padding: 2px 5px;
+.left{
+    float: left;
 }
 
-.innodom * {
-    background-color: rgb(246, 56, 202);
-    width: max-content;
-    border-radius: 10px;
-    padding: 2px 5px;
+.right{
+    float: right;
 }
