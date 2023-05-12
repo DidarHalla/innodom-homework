@@ -1,0 +1,26 @@
+.wrapper-items{
+    height: 300px;
+    overflow: scroll;
+}
+
+.material-symbols-outlined{
+    font-size: 100px !important;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    float: right;
+    margin-top: 200px;
+    shape-outside: polygon(0 200px, 200px 200px, 200px 100%, 0 100%);
+}
+
+.lion{
+    shape-outside: url(./images/lion.png);
+    float: right;
+}
