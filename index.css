@@ -1,4 +1,4 @@
-.wrapper-items{
+/* .wrapper-items{
     height: 300px;
     overflow: scroll;
 }
@@ -23,4 +23,16 @@
 .molecul{
     shape-outside: url(./images/lion.png);
     float: right;
+} */
+
+div{
+    background-color: rgb(23, 209, 215);
+    border: 5px solid rgb(23, 209, 215);
+    border-radius: 10%;
+    width: max-content;
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
