@@ -1,0 +1,90 @@
+.wrapper-about-us{
+    display: flex;
+    justify-content: center;
+
+    min-width: 1168px;
+    height: 612px;
+    margin-top: 155px;
+    margin-bottom: 175px;
+}
+
+div[about-us]{
+    min-width: 1168px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    
+}
+
+img[interior]{
+    filter: drop-shadow(35px 35px 0.5px #DEE4E2);
+}
+
+.text-about-us{
+    position: absolute;
+    width: 436.73px;
+    height: 517px;
+    left: 731.24px;
+    top: 46.5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div[text1]{
+    margin-bottom: 20px;
+
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+
+    color: #244D4D;
+}
+
+div[text2]{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    margin-bottom: 40px;
+}
+
+div[text3], div[text4], div[text5]{
+    display: flex;
+}
+
+.text-content{
+    margin-left: 30px;
+}
+
+.text-content > div{
+    margin-bottom: 14px;    
+
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+
+    color: #244D4D;
+}
+
+.text-about-us > div > div > span{
+    display: block;
+    width: 306.21px;
+    height: 52px;
+    left: 78px;
+    top: 40px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}

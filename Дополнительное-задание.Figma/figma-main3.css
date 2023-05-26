@@ -1,0 +1,27 @@
+.wrapper-main3{
+    min-width: 1187px;
+    height: 594px;
+
+    display: flex;
+    justify-content: center;
+}
+
+div[main3]{
+    width: 720px;
+    height: 103.33px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div[main3] > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+div[main3] > div[all]{
+    justify-content: center;
+}
+
+
