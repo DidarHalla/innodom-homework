@@ -1,14 +1,20 @@
 .wrapper-main3{
-    min-width: 1187px;
-    height: 594px;
-
+    min-width: 1200px;
     display: flex;
     justify-content: center;
+}
+
+.main3{
+    min-width: 1200px;
 }
 
 div[main3]{
     width: 720px;
     height: 103.33px;
+
+    margin-top: 140px;
+    margin-bottom: 100px;
+    margin-left: 20%;
 
     display: flex;
     flex-direction: column;
@@ -22,6 +28,117 @@ div[main3] > div{
 
 div[main3] > div[all]{
     justify-content: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 20px;
+
 }
 
+div[buttontext]{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    height: 50px;
 
+    color: #919090;
+}
+
+div[buttontext-first]{
+    
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 27px;
+    height: 50px;
+
+    color: #154444;
+
+    position: relative;
+}
+
+img[line]{
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 50px;
+}
+
+div[wrapper-img-top-butto]{
+    position: relative;
+}
+
+div[top]{
+    z-index: -1;
+    position: absolute;
+    width: 190.1px;
+    height: 85.87px;
+    left: -9px;
+    top: -9px;
+
+    background: #154444;
+}
+
+div[butto]{
+    z-index: -1;
+    position: absolute;
+    width: 190.1px;
+    height: 85.87px;
+    right: -9px;
+    bottom: -5px;
+
+    background: #154444;
+}
+
+div[wrapper-images]{
+    display: flex;
+    justify-content: space-between;
+}
+
+div[images-main3]{
+    width: 474px;
+    height: 336.83px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+div[images-main3] > div{
+    width: 260px;
+}
+
+div[images-main3] > div > div{
+    width: 222px;
+    height: 90px;
+    left: 0px;
+    top: 123.42px;
+
+    border: 1px solid #91909050;
+
+    margin: 35px;
+}
+
+div[images-main3] > div > div > div,div[images-main3] > div > div > img{
+    display: flex;
+    justify-content: center;
+    margin: 13px;
+}
+
+div[office]{
+    width: 222px;
+    height: 90px;
+    left: 252px;
+    top: 123.42px;
+
+    background: #154444;
+}
+
+div[office] > div{
+    color: aliceblue;
+}

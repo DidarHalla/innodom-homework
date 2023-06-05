@@ -1,0 +1,65 @@
+.wrapper-main4{
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 152px;
+}
+
+.main4{
+    min-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div[boll]{
+    width: 490px;
+    height: 490px;
+    border-radius: 50%;
+    margin: -493px 0 0 -122.42px;
+    
+    background: #244D4D;
+}
+
+div[our-customers]{ 
+    width: 435.07px;
+
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+div[text-items-main4]{
+    margin-top: 100px;
+}
+
+div[text-main4]{
+    width: 475.07px;
+
+    margin: 0 0 40px 0;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+div[foto-Jibon-rating-star], div[rating-star]{
+    display: flex;
+}
+
+div[foto-Jibon-rating-star] > div{
+    margin: 5px;
+}
+
+div[rating-text]{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+}
