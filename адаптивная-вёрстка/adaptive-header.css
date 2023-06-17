@@ -1,0 +1,197 @@
+body{
+    width: 1200px;
+    background-color: #1D1D1D;
+}
+
+.wrapper-header, .wrapper-main1{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-top-menu{
+    width: 1160px;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background: #232526;
+    position: relative;
+}
+
+img[big-pattern]{
+    position: absolute;
+    left: 6px;
+    top: 75.4px;
+    z-index: -1;
+}
+
+.top-menu{
+    width: 181px;
+    margin: 31px 60px;
+
+    color: aliceblue;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+img[aries]{
+    width: 138px;
+}
+
+img[box-img]{
+    display: none;
+}
+
+.MENU-BOX{
+    display: flex;
+}
+
+.MENU-BOX > img{
+    width: 12px;
+    margin: 0 10px;
+}
+
+.main-text{
+    max-width: 838.62px;
+    height: 288.2px;
+    margin: 172px auto 0 ;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 96px;
+
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #F4F4F4;
+
+}
+
+.artificial-intelligence{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image:url(https://phonoteka.org/uploads/posts/2021-05/1620292507_59-phonoteka_org-p-futazh-zimnii-fon-61.jpg);
+}
+
+img[arrow]{
+    margin: 0 0 0 590px;
+}
+
+img[spiral1]{
+    margin: -150px -329px 11px 100px;
+}
+
+div[first]{
+    position: absolute;
+    width: 25.99px;
+    height: 26.02px;
+    left: 1245.21px;
+    top: 155.03px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #5CE4CF 35.25%, #99A9FF 100%);
+    filter: blur(18px);
+}
+
+div[second]{
+    position: absolute;
+    width: 25.99px;
+    height: 26.02px;
+    left: 774.42px;
+    top: 244.09px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #5CE4CF 35.25%, #99A9FF 100%);
+    filter: blur(18px);
+}
+
+div[thirds]{
+    position: absolute;
+    width: 55.98px;
+    height: 56.04px;
+    left: 139.71px;
+    top: 412.21px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #5CE4CF 35.25%, #99A9FF 100%);
+    filter: blur(55px);
+}
+
+div[fourth]{
+    position: absolute;
+    width: 15.99px;
+    height: 16.01px;
+    left: 1110.27px;
+    top: 527.29px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #5CE4CF 35.25%, #99A9FF 100%);
+    filter: blur(18px);
+}
+
+div[fifth]{
+    position: absolute;
+    width: 49.95px;
+    height: 50px;
+    left: 1228.98px;
+    top: 553.45px;
+    
+    background: radial-gradient(59.62% 59.62% at 50% 50%, #5CE4CF 41.98%, #99A9FF 100%);
+    opacity: 0.7;
+    filter: blur(11.5px);
+    transform: matrix(0.97, 0.26, -0.26, 0.97, 0, 0);
+}
+
+div[sixth]{
+    position: absolute;
+    width: 24.93px;
+    height: 24.96px;
+    left: 1099.87px;
+    top: 757.65px;
+    
+    background: radial-gradient(59.62% 59.62% at 50% 50%, #5CE4CF 41.98%, #99A9FF 100%);
+    opacity: 0.7;
+    filter: blur(6px);
+    transform: matrix(0.97, 0.26, -0.26, 0.97, 0, 0);
+}
+
+div[seventh]{
+    position: absolute;
+    width: 25.99px;
+    height: 26.02px;
+    left: 337.62px;
+    top: 716.43px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #5CE4CF 35.25%, #99A9FF 100%);
+    filter: blur(18px);
+}
+
+@media (max-width: 800px) {
+    .wrapper-top-menu{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px 0 0;
+
+        width: 100%;
+        height: 90px;
+        
+        background: #232526;
+    }
+
+    .top-menu{
+        display: none;
+    }
+
+    img[box-img]{
+        display: block;
+    }
+
+    .topmenu-text{
+        display: none;
+    }
+
+    img[aries]{
+        width: 80px;
+    }
+}

@@ -1,0 +1,99 @@
+.wrapper-main2{
+    margin-top: 200px;
+}
+
+.main2-top-text{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.we-insert-main2{
+    width: 640px;
+    height: 100px;
+    
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 74px;
+    
+    text-transform: capitalize;
+    
+    color: #F4F4F4;
+}
+
+.they-are-main2{
+    width: 365px;
+    
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    
+    
+    color: #B8B8B8;
+}
+
+.main2-content{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img[small-main2]{
+    margin: 50px 0 50px -220px;
+}
+
+div[main2-kawaski]{
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: capitalize;
+
+    color: rgba(184, 184, 184, 0.7);
+}
+
+div[main-right-text]{
+    margin-left: 88px;
+    margin-top: 125px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div[main2-corporobo]{
+    width: 500px;
+    font-family: 'Ginora Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: capitalize;
+
+    color: #F4F4F4;
+}
+
+div[main2-we-spoke]{
+    width: 429px;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #B8B8B8;
+}
+
+span[main2-project]{
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    
+    align-items: center;
+    text-transform: uppercase;
+    
+    color: #99A9FF;
+}

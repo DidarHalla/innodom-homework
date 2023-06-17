@@ -1,0 +1,120 @@
+div[wrapper-footer-items]{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div[footer-items]{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+span[footer-we-help]{
+    font-family: 'Ginora Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 74px;
+    
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image:url(https://phonoteka.org/uploads/posts/2021-05/1620292507_59-phonoteka_org-p-futazh-zimnii-fon-61.jpg);
+}
+
+span[footer-if-your]{
+    width: 518px;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: #B8B8B8;
+}
+
+div[input-div-footer]{
+    border-bottom: 1px solid #565656;
+    padding: 0 290px 0 50px;
+    margin-right: 100px;
+}
+
+div[input-div-footer] > input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #05b8ff;
+
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 0 0 20px 0;
+    width: 90px;
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #B8B8B8;
+}
+
+div[wrapper-footer-bottom-text]{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-top: 100px;
+}
+
+div[wrapper-footer-bottom-text] > span{
+    font-family: 'Ginora Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    
+    color: #B8B8B8;
+}
+
+span[linkedin]{
+    color:#99A9FF !important;
+}
+
+div[footer-all-rights]{
+    font-family: 'Ginora Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    border-top: 3px solid #7a93f682;
+    width: 1600px;
+    height: 80px;
+    margin-top: 90px;
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    color: #B8B8B8;    
+}
+
+span[PIXIRHY]{
+    color:rgba(153, 169, 255, 1);
+    margin-left: 6px;
+}
