@@ -64,6 +64,14 @@ div[button]{
     width: 100%;
 }
 
+img[robo-first]{
+    filter: invert(100%);
+}
+
+img[robo-second]{
+    filter: sepia(100%); 
+}
+
 @media (max-width: 800px) {
     div[wrapper]{
         display: block;

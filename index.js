@@ -98,3 +98,11 @@
 // }
 // console.log(countPositivesSumNegatives());
 
+
+let a = 2
+
+let b = 2
+
+let c = 2
+
+console.log(a, b -= 1, c += 2);
