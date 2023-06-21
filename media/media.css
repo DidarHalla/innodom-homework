@@ -71,6 +71,21 @@ div[button]{
     div[button]{
         width: 427px;
     }
+    div[header]{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 355px;
+        justify-content: center;
+        padding: 40px;
+    }
+    div[innodom1]{
+        display: flex;
+        justify-content: center;
+    }
+    span[menu-icon-header]{
+        margin: 7px 5px 0 0;
+    }
 }
 
 @supports (box-shadow: 10px 5px 5px blue) {  
