@@ -1,3 +1,32 @@
+div[header]{
+    display: flex;
+    justify-content: space-between;
+
+    height: 80px;
+    box-shadow: 0 10px 9px -9px #888;
+    margin-bottom: 20px;
+}
+
+div[header] > div{
+    padding: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div[innodom1]{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+div[right-text-header]{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+span[community]{
+    color: #0077ff;
+}
+
 div[wrapper]{
     display: flex;
 }
@@ -23,9 +52,9 @@ div[text] > div > div{
     margin: 50px;
 }
 
-div[innodom]{
+div[innodom2]{
     font-size: 50px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 div[button]{
