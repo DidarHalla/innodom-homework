@@ -3,8 +3,9 @@
 div{
     background-color: rgb(23, 209, 215);
     border: 5px solid rgb(23, 209, 215);
-    border-radius: 10%;
+    border-radius: 10px;
     width: max-content;
+    margin: 15px;
 }
 a{
     text-decoration: none;

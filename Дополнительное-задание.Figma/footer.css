@@ -77,7 +77,7 @@ input[input-email-address]{
     height: 48px;
     margin-top: 51px;
     bottom: none;
-
+    padding-left: 20px;
 }
 
 img[footer-arrow-email]{
