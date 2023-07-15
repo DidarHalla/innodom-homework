@@ -868,3 +868,35 @@ const userInfo = {
 // console.log(parallel(arr));
 
 
+
+
+
+// function loadImage(url) {
+//   return new Promise((resolve, reject) => {
+//     const image = new Image();
+//     image.onload = () => resolve(url);
+//     image.onerror = () => reject(url);
+//     image.src = url;
+//   });
+// }
+ 
+// const imageUrls = [
+//   'https://avatars.mds.yandex.net/i?id=a3f6f8303c0d40b65dfe38b05dd1a93704f26e9c-8806475-images-thumbs&n=13',
+//   'https://avatars.mds.yandex.net/i?id=a3f6f8303c0d40b65dfe38b05dd1a93704f26e9c-8806475-images-thumbs&n=13',
+//   'https://avatars.mds.yandex.net/i?id=a3f6f8303c0d40b65dfe38b05dd1a93704f26e9c-8806475-images-thumbs&n=13'
+// ];
+
+// const promises = imageUrls.map(url => loadImage(url));
+
+// Promise.allSettled(promises)
+//   .then(results => {
+//     results.forEach(result => {
+//       if (result.status === 'fulfilled') {
+//         console.log(`Изображение ${result.value} успешно загружено`);
+//       } else {
+//         console.log(`Ошибка загрузки изображения ${result.reason}`);
+//       }
+//     });
+//   });
+
+

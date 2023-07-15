@@ -21,3 +21,21 @@ function time(){
     time.style.textShadow = '0px 0px 30px'
 }
 time()
+
+let body = document.getElementById('body')
+console.log(body);
+body.onmouseover = (ev) => {
+    if(ev.target.className === 'box'){
+        ev.target.style.background = "#fce46e"
+        ev.target.style.transform = "translateY(-20px)"
+    }
+}
+body.onmouseout = (ev) => {
+    if(ev.target.className === 'box'){
+        ev.target.style.background = ""
+        ev.target.style.transform = ""
+    }
+}
+
+
+
