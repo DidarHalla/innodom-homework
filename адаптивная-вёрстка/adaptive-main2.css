@@ -97,3 +97,48 @@ span[main2-project]{
     
     color: #99A9FF;
 }
+
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    .main2-top-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .they-are-main2{
+        width: 365px;
+        margin-top: 100px;
+        
+        font-family: 'Gilroy-Regular';
+        font-size: 16px;
+        line-height: 24px;
+        
+        
+        color: #B8B8B8;
+    }
+
+    .main2-content{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img[big-main2]{
+        width: 80%;
+    }
+
+    img[small-main2]{
+        width: 60%;
+        margin: -70% 0 0 35%;
+    }
+
+    div[main-right-text]{
+        margin-left: 0;
+        margin-top: 125px;
+        height: 255px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

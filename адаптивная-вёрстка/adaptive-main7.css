@@ -10,6 +10,10 @@ div[main7-images]{
     margin: 0 60px 0 0;
 }
 
+img[instruments2]{
+    display: none;
+}
+
 div[main7-date-text]{
     margin-top: 40px;
 }
@@ -73,4 +77,97 @@ div[main7-bottom-arrows]{
     margin: 140px 0 200px 130px;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    .wrapper-main7{
+        margin-top: 180px;
+    }
+
+    img[top-line-main7]{
+        display: none;
+    }
+    
+    div[wrapper-main7-images]{
+        display: block;
+    }
+
+    div[main7-images] > img{
+        width: 100%;
+        margin: 60px 0;
+    }
+
+    img[instruments1]{
+        display: none;
+    }
+
+    img[instruments2]{
+        display: block;
+    }
+    
+    div[main7-date-text]{
+        margin-top: 40px;
+        height: 200px;
+    }
+    
+    span[main7-span-insight]{
+        font-family: 'Ginora Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 62px;
+        line-height: 50px;
+        margin-top: 40px;
+        margin-bottom: 90px;
+        
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F4F4F4;
+    }
+    
+    span[date-main7]{
+        font-family: 'Gilroy-Regular';
+        font-size: 16px;
+        line-height: 16px;
+        
+        text-transform: capitalize;
+        
+        color: #B8B8B8;
+    }
+    
+    span[main7-text-content]{
+        height: 200px;
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 50px;
+      
+        text-transform: capitalize;
+        
+        color: #B8B8B8;
+    }
+    
+    span[main7-text-content-other-color]{
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 50px;
+        
+        text-transform: capitalize;
+        
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image:url(https://phonoteka.org/uploads/posts/2021-05/1620292507_59-phonoteka_org-p-futazh-zimnii-fon-61.jpg);
+    }
+    
+    div[main7-bottom-arrows]{
+        width: 90%;
+        margin: 140px 0 200px 0;
+        display: flex;
+        justify-content: space-between;
+    }
 }

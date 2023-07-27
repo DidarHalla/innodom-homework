@@ -10,6 +10,14 @@ img[top-line-main6]{
     margin-bottom: 30px;
 }
 
+div[main6-textblock-right]{
+    display: none;
+}
+
+div[main6-top-text-latest2]{
+    display: none;
+}
+
 div[main6-top-text-latest]{
     font-family: 'Sans';
     font-style: normal;
@@ -158,4 +166,178 @@ span[main6-job]{
 
 img[main6-spiral-images]{
     margin: 700px 0 0 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    .wrapper-main6{
+        margin-top: 180px;
+    }
+    
+    .main6{
+        display: block;
+    }
+    
+    img[top-line-main6]{
+        display: none;
+    }
+
+    div[main6-top-text-latest2]{
+        display: block;
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 62px;
+        line-height: 74px;
+        margin-bottom: 140px;
+        
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F4F4F4;
+    }
+    
+    div[main6-top-text-latest]{
+        display: none;
+    }
+    
+    .wrapper-main6-text-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main6-text-content{
+        margin-left: 50px;
+    }
+    
+    div[main6-bottom-line]{
+        margin-left: -50px;
+    }
+    
+    div[main6-text1]{
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 5px;
+        margin-top: 40px;
+        
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.3em;
+        text-transform: capitalize;
+        
+        color: rgba(184, 184, 184, 0.7);
+    }
+    
+    div[main6-text2]{
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 50px;
+        width: 500px;
+        margin-bottom: 20px;
+        
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F4F4F4;
+    }
+    
+    div[main6-text22]{
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 50px;
+        width: 500px;
+        margin-bottom: 20px;
+    
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image:url(https://phonoteka.org/uploads/posts/2021-05/1620292507_59-phonoteka_org-p-futazh-zimnii-fon-61.jpg);
+    }
+    
+    div[main6-text3]{
+        font-family: 'Gilroy-Medium';
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 40px;
+        
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #B8B8B8;
+    }
+    
+    span[human-main6]{
+        color: #99A9FF;
+    }
+    
+    img[big-arrow-main6]{
+        margin: 150px -90px;
+    }
+    
+    div[main6-text-arrow]{
+        margin-top: 90px;
+    }
+    
+    .main6-textblock-right{
+        display: none;
+    }
+    
+    div[main6-textblock-right]{
+        display: block;
+        width: 90%;
+        margin: 50px 30px;
+    }
+    
+    .main6-textblock-right > div{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        width: 100%;
+    
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 26px;
+        
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #B8B8B8;
+        
+    }
+    
+    span[main6-job]{
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 38px;
+        margin-bottom: 30px;
+    
+        
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F4F4F4;
+    }
+    
+    img[main6-spiral-images]{
+        display: none;
+    }
 }

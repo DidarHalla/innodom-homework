@@ -29,3 +29,44 @@ img[main4-img-cypher]{
     background: rgba(48, 54, 58, 0.2);
 }
 
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    .wrapper-main4{
+        margin-top: 200px;
+    }
+
+    img[line]{
+        width: 100%;
+    }
+    
+    div[main4-our]{
+        font-family: 'Ginora Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 62px;
+        line-height: 74px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+        
+        text-transform: capitalize;
+        
+        color: #F4F4F4;
+    }
+
+    div[wrapper-wrapper-main4-images]{
+        display: flex;
+    }
+    
+    .wrapper-main4-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 30px;
+    }
+    
+    img[main4-img-cypher]{
+        padding: 35px;
+        
+        background: rgba(48, 54, 58, 0.2);
+    }
+}

@@ -85,3 +85,98 @@ img[small-main3]{
 img[big-main3]{
     margin: 0 0 0 -190px;
 }
+
+img[fit-main3]{
+    display: none;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    .main3{
+        margin-top: 80px;
+        display: block;
+    }
+    
+    img[spiral-main3]{
+        display: none;
+    }
+    
+    .main3-text-left{
+        width: 518px;
+        height: 253.38px;
+        margin: 0 0 -100px 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    div[main3-ROXERIN]{
+        font-family: 'Ginora Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        
+        color: rgba(184, 184, 184, 0.7);
+    }
+    
+    div[main3-young-minds]{
+        width: 518px;
+        height: 100px;
+        
+        font-family: 'Ginora Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 50px;
+        
+        text-transform: capitalize;
+        
+        color: #F4F4F4;
+    }
+    
+    div[main3-we-spoke]{
+        width: 499px;
+        height: 48px;
+        
+        font-family: 'Gilroy-Regular';
+        font-size: 16px;
+        line-height: 24px;
+    
+        color: #B8B8B8;
+    }
+    
+    span[main3-project]{
+        font-family: 'Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        
+        text-transform: uppercase;
+        
+        color: #5CE4CF;
+        
+    }
+    
+    div[main3-images]{
+        display: none;
+    }
+    
+    img[big-main3]{
+        display: none;
+    }
+    
+    img[small-main3]{
+        display: none;
+    }
+
+    img[fit-main3]{
+        display: block;
+        width: 100%;
+    }
+}

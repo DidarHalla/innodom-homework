@@ -15,7 +15,7 @@ function givingOutMenu(){
     const component = document.createElement('div');
     component.style.marginTop = '15px'
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 6; i++) {
         const child = document.createElement('div');
         child.textContent = `Child ${i+1}`;
         component.appendChild(child);
@@ -26,7 +26,6 @@ function givingOutMenu(){
         child.style.marginLeft = '50px'
         child.style.border = '1px solid black'
     }
-    
     return component;
 }
 
@@ -62,9 +61,8 @@ function createBootMenu() {
     bootMenu.onmouseout = (ev) => {
         if(ev.target.className === 'divs-in-boot-menu'){
             ev.target.style.background = "lightblue"
-            if(typeof(ev.target) === typeof(givingOutMenu())){
-                ev.target.innerHTML = ''
-            }
+            ev.target.innerHTML = ''
+
             div1.textContent = 'спорт'
             div2.textContent = 'еда'
             div3.textContent = 'здоровье'
