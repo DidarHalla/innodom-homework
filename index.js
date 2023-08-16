@@ -131,6 +131,40 @@
 
 
 
+
+// 1
+function LoggerMixin(method,...argument){
+    console.log("meth",method);
+    console.log("arg",argument);
+}
+
+class Student{
+    goUnik(to){
+        return `I'm go ${to}`
+    }
+    goHome(to){
+     return   `I'm go ${to}`
+    }
+    goEating(to){
+     return `I'm go ${to}`
+    }
+}
+
+Object.getOwnPropertyNames(Student.prototype).forEach(v=>{
+    let fun=Student.prototype[v]
+    Student.prototype[v]=function (to){
+        LoggerMixin(v,to)
+
+      return fun(to)
+    }
+})
+
+let student=new Student()
+student.goEating("Didaries")
+
+
+
+// 2
 class Shape {
 
     constructor(x,y) {
@@ -196,4 +230,93 @@ class Triangle extends Shape {
 
 
 
+// 3
+ let revers=function (str=""){
+    return str.split("").reduceRight((a,v)=>String(a)+String(v))
+  }
+  let old=revers
+  
+  revers=function (...string){
+     return  string.map(v=>old(v))
+  }
 
+  console.log(revers("kfsjf","dsjd","ds"));
+
+
+
+  
+// 4
+  class Engine{
+    constructor(){
+        this.state="stand"
+    }
+    start(){
+        this.state="go"
+    }
+    stand(){
+        this.state="stand"
+    }
+}
+
+class Body{
+    constructor(){
+        this.state="close"
+    }
+   
+    open(){
+        this.state="open"
+    }
+}
+
+class Car{
+    constructor(engine,body){
+        this.engine=new Engine()
+        this.body=new Body()
+    }
+    open(){
+        body.open()
+    }
+    go(){
+        if(this.body.state=="close") {return console.log("Машина закрыта");}
+        this.engine.start()
+    }
+    stand(){
+        if(this.engine.state=="go") {return console.log("Машина заведена");}
+        this.body.close()
+    }
+}
+
+
+
+
+// 5
+
+class Car{
+    constructor(wheels,seats){
+        this.wheels=wheels //4
+        this.seats=seats //4
+    }
+    creat(){
+        return  new Motorcycle(4,4)
+      }
+}
+
+class Bicycle{
+    constructor(wheels,seats){
+        this.wheels=wheels //2
+        this.seats=seats //1
+    }
+    creat(){
+        return  new Motorcycle(2,1)
+      }
+}
+
+class Motorcycle{
+    constructor(wheels,seats){
+        this.wheels=wheels //2
+        this.seats=seats //2
+    }
+    creat(){
+      return  new Motorcycle(2,2)
+    }
+}
