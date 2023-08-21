@@ -268,7 +268,7 @@ class Body{
     }
 }
 
-class Car{
+class Cary{
     constructor(engine,body){
         this.engine=new Engine()
         this.body=new Body()

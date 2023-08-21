@@ -8,3 +8,10 @@
 .select-divs{
     margin-top: 25px;
 }
+
+#task28-dop1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: all 10s  ease-out;
+}

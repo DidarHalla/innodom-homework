@@ -24,7 +24,7 @@ let select = () => {
                 let div = document.createElement('div')
                 div.innerHTML = v
                 div.className = 'select-divs'
-                div.onclick = (ev) => {
+                div.onclick = () => {
                     chooseLanguage.innerHTML = div.textContent
                     select.innerHTML = ''
                     bull = true
@@ -38,6 +38,36 @@ let select = () => {
             bull = true
         }
     }
-    
 }
 select()
+
+
+let task28dop1 = () => {
+    let task28Dop1 = document.getElementById('task28-dop1')
+    let size = 500;
+
+    function animation () {
+        size -= 1;
+        
+        if (size > 0) {
+            task28Dop1.style.borderRadius = `${size}%`;
+            requestAnimationFrame (animation);
+        }
+    }
+
+    animation();
+}
+task28dop1()
+
+let task28dop2 = () => {
+    let task28Dop2 = document.getElementById('task28-dop2')
+
+    function animation () {
+        if (size > 0) {
+            task28Dop2.style.borderRadius = `${size}%`;
+            requestAnimationFrame (animation);
+        }
+    }
+    animation();
+}
+task28dop2()
