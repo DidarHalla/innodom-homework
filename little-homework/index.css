@@ -15,3 +15,63 @@
     background-color: blue;
     transition: all 10s  ease-out;
 }
+
+#wrapper-task28-dop2{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+#task28-dop2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    animation: moveAlongPath 5s linear infinite;
+}
+
+@keyframes moveAlongPath {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(400px, 0) rotate(720deg);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.transition1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition1.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#parallax{
+    background-image: url("https://i.pinimg.com/originals/f7/6d/c0/f76dc098771749dab8cf066da3257c51.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

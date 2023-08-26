@@ -132,191 +132,191 @@
 
 
 
-// 1
-function LoggerMixin(method,...argument){
-    console.log("meth",method);
-    console.log("arg",argument);
-}
+// // 1
+// function LoggerMixin(method,...argument){
+//     console.log("meth",method);
+//     console.log("arg",argument);
+// }
 
-class Student{
-    goUnik(to){
-        return `I'm go ${to}`
-    }
-    goHome(to){
-     return   `I'm go ${to}`
-    }
-    goEating(to){
-     return `I'm go ${to}`
-    }
-}
+// class Student{
+//     goUnik(to){
+//         return `I'm go ${to}`
+//     }
+//     goHome(to){
+//      return   `I'm go ${to}`
+//     }
+//     goEating(to){
+//      return `I'm go ${to}`
+//     }
+// }
 
-Object.getOwnPropertyNames(Student.prototype).forEach(v=>{
-    let fun=Student.prototype[v]
-    Student.prototype[v]=function (to){
-        LoggerMixin(v,to)
+// Object.getOwnPropertyNames(Student.prototype).forEach(v=>{
+//     let fun=Student.prototype[v]
+//     Student.prototype[v]=function (to){
+//         LoggerMixin(v,to)
 
-      return fun(to)
-    }
-})
+//       return fun(to)
+//     }
+// })
 
-let student=new Student()
-student.goEating("Didaries")
+// let student=new Student()
+// student.goEating("Didaries")
 
 
 
-// 2
-class Shape {
+// // 2
+// class Shape {
 
-    constructor(x,y) {
-        if(this.constructor == Shape){
-            throw new Error(" Object of Abstract Class cannot be created");
+//     constructor(x,y) {
+//         if(this.constructor == Shape){
+//             throw new Error(" Object of Abstract Class cannot be created");
             
-        }
+//         }
       
-    }
+//     }
 
-    getArea(){
-        throw new Error("Abstract Method has no implementation");
-    }
+//     getArea(){
+//         throw new Error("Abstract Method has no implementation");
+//     }
 
-    getPerimeter(){
-        throw new Error("Abstract Method has no implementation");
-    }
-}
+//     getPerimeter(){
+//         throw new Error("Abstract Method has no implementation");
+//     }
+// }
 
-class Circle extends Shape {
-   constructor(radius){
-        super()
-        this.radius=radius
-   }
-    getArea(){
-       return Math.PI * this.radius * this.radius;
-    }
-    getPerimeter(){
-        return 2 * Math.PI * this.radius;
-    }
-}
+// class Circle extends Shape {
+//    constructor(radius){
+//         super()
+//         this.radius=radius
+//    }
+//     getArea(){
+//        return Math.PI * this.radius * this.radius;
+//     }
+//     getPerimeter(){
+//         return 2 * Math.PI * this.radius;
+//     }
+// }
 
-class Triangle extends Shape {
-    constructor(base, height, side1, side2, side3) {
-        super();
-        this.base = base;
-        this.height = height;
-        this.side1 = side1;
-        this.side2 = side2;
-        this.side3 = side3;
-      }
-     getArea(){
-        return (this.base * this.height) / 2;
-     }
-     getPerimeter(){
-         return  this.side1 + this.side2 + this.side3;
-     }
- }
+// class Triangle extends Shape {
+//     constructor(base, height, side1, side2, side3) {
+//         super();
+//         this.base = base;
+//         this.height = height;
+//         this.side1 = side1;
+//         this.side2 = side2;
+//         this.side3 = side3;
+//       }
+//      getArea(){
+//         return (this.base * this.height) / 2;
+//      }
+//      getPerimeter(){
+//          return  this.side1 + this.side2 + this.side3;
+//      }
+//  }
 
- class Rectangle extends Shape {
-    constructor(length, width) {
-        super();
-        this.length = length;
-        this.width = width;
-      }
-      getArea() {
-        return this.length * this.width;
-      }
-      getPerimeter() {
-        return 2 * (this.length + this.width);
-      }
- }
+//  class Rectangle extends Shape {
+//     constructor(length, width) {
+//         super();
+//         this.length = length;
+//         this.width = width;
+//       }
+//       getArea() {
+//         return this.length * this.width;
+//       }
+//       getPerimeter() {
+//         return 2 * (this.length + this.width);
+//       }
+//  }
 
 
 
-// 3
- let revers=function (str=""){
-    return str.split("").reduceRight((a,v)=>String(a)+String(v))
-  }
-  let old=revers
+// // 3
+//  let revers=function (str=""){
+//     return str.split("").reduceRight((a,v)=>String(a)+String(v))
+//   }
+//   let old=revers
   
-  revers=function (...string){
-     return  string.map(v=>old(v))
-  }
+//   revers=function (...string){
+//      return  string.map(v=>old(v))
+//   }
 
-  console.log(revers("kfsjf","dsjd","ds"));
+//   console.log(revers("kfsjf","dsjd","ds"));
 
 
 
   
-// 4
-  class Engine{
-    constructor(){
-        this.state="stand"
-    }
-    start(){
-        this.state="go"
-    }
-    stand(){
-        this.state="stand"
-    }
-}
+// // 4
+//   class Engine{
+//     constructor(){
+//         this.state="stand"
+//     }
+//     start(){
+//         this.state="go"
+//     }
+//     stand(){
+//         this.state="stand"
+//     }
+// }
 
-class Body{
-    constructor(){
-        this.state="close"
-    }
+// class Body{
+//     constructor(){
+//         this.state="close"
+//     }
    
-    open(){
-        this.state="open"
-    }
-}
+//     open(){
+//         this.state="open"
+//     }
+// }
 
-class Cary{
-    constructor(engine,body){
-        this.engine=new Engine()
-        this.body=new Body()
-    }
-    open(){
-        body.open()
-    }
-    go(){
-        if(this.body.state=="close") {return console.log("Машина закрыта");}
-        this.engine.start()
-    }
-    stand(){
-        if(this.engine.state=="go") {return console.log("Машина заведена");}
-        this.body.close()
-    }
-}
-
-
+// class Cary{
+//     constructor(engine,body){
+//         this.engine=new Engine()
+//         this.body=new Body()
+//     }
+//     open(){
+//         body.open()
+//     }
+//     go(){
+//         if(this.body.state=="close") {return console.log("Машина закрыта");}
+//         this.engine.start()
+//     }
+//     stand(){
+//         if(this.engine.state=="go") {return console.log("Машина заведена");}
+//         this.body.close()
+//     }
+// }
 
 
-// 5
 
-class Car{
-    constructor(wheels,seats){
-        this.wheels=wheels //4
-        this.seats=seats //4
-    }
-    creat(){
-        return  new Motorcycle(4,4)
-      }
-}
 
-class Bicycle{
-    constructor(wheels,seats){
-        this.wheels=wheels //2
-        this.seats=seats //1
-    }
-    creat(){
-        return  new Motorcycle(2,1)
-      }
-}
+// // 5
 
-class Motorcycle{
-    constructor(wheels,seats){
-        this.wheels=wheels //2
-        this.seats=seats //2
-    }
-    creat(){
-      return  new Motorcycle(2,2)
-    }
-}
+// class Car{
+//     constructor(wheels,seats){
+//         this.wheels=wheels //4
+//         this.seats=seats //4
+//     }
+//     creat(){
+//         return  new Motorcycle(4,4)
+//       }
+// }
+
+// class Bicycle{
+//     constructor(wheels,seats){
+//         this.wheels=wheels //2
+//         this.seats=seats //1
+//     }
+//     creat(){
+//         return  new Motorcycle(2,1)
+//       }
+// }
+
+// class Motorcycle{
+//     constructor(wheels,seats){
+//         this.wheels=wheels //2
+//         this.seats=seats //2
+//     }
+//     creat(){
+//       return  new Motorcycle(2,2)
+//     }
+// }

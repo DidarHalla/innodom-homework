@@ -51,23 +51,46 @@ let task28dop1 = () => {
         
         if (size > 0) {
             task28Dop1.style.borderRadius = `${size}%`;
-            requestAnimationFrame (animation);
+            requestAnimationFrame(animation);
         }
     }
 
-    animation();
+    setTimeout(()=>{
+        animation();
+    }, 1000)
 }
 task28dop1()
+
 
 let task28dop2 = () => {
     let task28Dop2 = document.getElementById('task28-dop2')
 
-    function animation () {
-        if (size > 0) {
-            task28Dop2.style.borderRadius = `${size}%`;
-            requestAnimationFrame (animation);
-        }
+    let pick = 0;
+    const radius = 200;
+    const spit = 0.1;
+
+    function radElem () {
+        const x = radius * Math.cos(pick);
+        const y = radius * Math.sin(pick);
+        task28Dop2.style.transform = `translate(${x}px, ${y}px)`;
+        pick += spit;
+        requestAnimationFrame(radElem);
     }
-    animation();
+
+    radElem();
 }
 task28dop2()
+
+
+
+
+let task28dop3 = () => {
+    let transition = document.querySelector('.transition')
+    window.onload = () => {
+        setTimeout(() => {
+            transition.classList.remove('is-active')
+        }, 500)
+    }
+    
+}
+task28dop3()
