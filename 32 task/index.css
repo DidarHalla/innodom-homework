@@ -1,0 +1,36 @@
+#change-color, #change{
+    width: fit-content;
+    cursor: pointer;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+#basket{
+    width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #bde4f6;
+}
+
+#basket > div{
+    margin: 10px;
+    border: 1px solid #000;
+
+}
+
+#items{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#items > div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 100px;
+}
